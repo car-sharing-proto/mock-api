@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Enums\Color.cs" />
+    <Compile Include="Domain\Models\Car.cs" />
+    <Compile Include="Domain\Models\CarConfiguration.cs" />
+    <Compile Include="Domain\Models\LicensePlate.cs" />
+    <Compile Include="Domain\Models\Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="Application\" />
+    <Folder Include="CLI\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
