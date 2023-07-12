@@ -4,6 +4,6 @@
     {
         public Car Car { get; }
         public LicensePlate LicensePlate { get; set; }
-        public Position Position { get; set; }
+        public Location Location { get; set; }
     }
 }
