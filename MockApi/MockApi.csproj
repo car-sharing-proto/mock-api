@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +33,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MockApi.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Enums\Color.cs" />
-    <Compile Include="Domain\Models\Car.cs" />
-    <Compile Include="Domain\Models\CarConfiguration.cs" />
-    <Compile Include="Domain\Models\LicensePlate.cs" />
-    <Compile Include="Domain\Models\Position.cs" />
+    <Compile Include="src\Application\Interfaces\IRepository.cs" />
+    <Compile Include="src\Domain\Enums\Color.cs" />
+    <Compile Include="src\Domain\Models\Car.cs" />
+    <Compile Include="src\Domain\Models\CarConfiguration.cs" />
+    <Compile Include="src\Domain\Models\LicensePlate.cs" />
+    <Compile Include="src\Domain\Models\Location.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,10 +62,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="API\" />
-    <Folder Include="Application\" />
-    <Folder Include="CLI\" />
-    <Folder Include="Infrastructure\" />
+    <Folder Include="src\API\" />
+    <Folder Include="src\CLI\" />
+    <Folder Include="src\Infrastructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
