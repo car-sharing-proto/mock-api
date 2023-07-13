@@ -1,4 +1,4 @@
-﻿namespace MockApi.Domain.Models
+﻿namespace Core.Domain.Models
 {
     public class LicensePlate
     {

@@ -1,8 +1,8 @@
-﻿namespace MockApi.Domain.Models
+﻿namespace Core.Domain.Models
 {
     public class Location
     {
-        public double x; 
+        public double x;
         public double y;
         public double angle;
 

@@ -1,6 +1,6 @@
-﻿using MockApi.Domain.Models;
+﻿using Core.Domain.Models;
 
-namespace MockApi.Application.Interfaces
+namespace Core.src.Application.Interfaces
 {
     public interface IRepository
     {

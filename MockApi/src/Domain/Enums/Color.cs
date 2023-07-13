@@ -1,4 +1,4 @@
-﻿namespace MockApi.Domain.Enums
+﻿namespace Core.Domain.Enums
 {
     public enum Color
     {

@@ -1,6 +1,6 @@
-﻿using MockApi.Domain.Enums;
+﻿using Core.Domain.Enums;
 
-namespace MockApi.Domain.Models
+namespace Core.Domain.Models
 {
     public class Car
     {
