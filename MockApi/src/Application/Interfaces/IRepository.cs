@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Models;
 
-namespace Core.src.Application.Interfaces
+namespace Core.Application.Interfaces
 {
     public interface IRepository
     {
